@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/text_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:text="姓名 :" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_name"
+        android:layout_toRightOf="@id/tv_name"
+        android:hint="请输入姓名"
+        android:singleLine="true"
+        android:textColor="#07C7BB" />
+
+    <TextView
+        android:id="@+id/tv_height"
+        style="@style/text_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:text="身高 :" />
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_height"
+        android:layout_toRightOf="@id/tv_name"
+        android:hint="               cm"
+        android:singleLine="true"
+        android:textColor="#07C7BB" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        style="@style/text_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_height"
+        android:text="年龄 :" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_age"
+        android:layout_toRightOf="@id/tv_name"
+        android:hint="                 岁"
+        android:singleLine="true"
+        android:textColor="#07C7BB" />
+
+    <RadioGroup
+        android:id="@+id/rg_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_name"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <!-- android:button="@android:color/transparent"-->
+        <RadioButton
+            android:id="@+id/rb_man"
+            style="@style/text_style1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:checked="true"
+            android:gravity="center"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/rb_woman"
+            style="@style/text_style1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="女" />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/noweight_enter_sport" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+
+        android:background="@mipmap/freshman_guide_thirde_page"
+        android:text="开始吧，兄弟\n Click Me" />
+
+</RelativeLayout>
